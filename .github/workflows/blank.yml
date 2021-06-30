@@ -34,3 +34,6 @@ jobs:
         run: |
           git clone https://github.com/phamleo/repo_git_action.git
           ls -la
+          git add .
+          git commit -m 'repo_git_action.git'
+          git push origin main
