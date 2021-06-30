@@ -33,3 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           git clone https://github.com/phamleo/repo_git_action.git
+          ls -la
