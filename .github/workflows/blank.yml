@@ -33,7 +33,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           git clone https://github.com/phamleo/repo_git_action.git tagert
-          sudo cd tagert | rm -rf .git
+          cd tagert 
+          rm -rf .git
+          cd ..
           ls -la
           git add .
           git commit -m 'repo_git_action'
