@@ -37,7 +37,8 @@ jobs:
           git clone https://github.com/phamleo/repo_git_action.git target
           cd target
           rm -rf .git
+          ls -la
           cd ..
           git add .
           git commit -m 'repo_git_action'
-          git push origin main
+          git push -f origin main
