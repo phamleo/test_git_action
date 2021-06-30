@@ -35,7 +35,9 @@ jobs:
           git config --global user.email ""
           git config --global user.name "repo"
           git clone https://github.com/phamleo/repo_git_action.git target
-          rm -rf target/.git
+          cd target
+          rm -rf .git
+          cd ..
           git add .
           git commit -m 'repo_git_action'
           git push origin main
